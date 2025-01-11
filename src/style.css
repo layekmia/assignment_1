@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #006a50;
+  --primary-text-color: #0e0e0e;
+  --light-blue-color: #5490f5;
+  --light-green-color: #09a15c;
+  --yellow-color: #ffc239;
+  --extra-light-green-color: #c6e4d6;
+  --white-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%; /* For easy to calculate rem  Now 1rem = 10px; */
+}
+
+body {
+  font-family: "Fira Sans", serif;
+  background: rgb(245, 245, 245);
+}
+
+/**** Note: I made it according to my device size, Figma size is 1600px and my screen size is 1366px  And I made it based on  my screen size. Like font, padding, margin, width, heiht*/
+
+.wrapper {
+  max-width: 1088px;
+  margin: 0 auto 68px auto;
+}
+
+.primary-btn {
+  padding: 15px 30px;
+  display: inline-block;
+  background: var(--primary-color);
+  color: var(--white-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 18px;
+  border-radius: 8px;
+}
+
+h2.title {
+  color: var(--primary-text-color);
+  font-size: 3.4rem;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+/* nav section  */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+nav .logo {
+  color: var(--primary-text-color);
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+nav .sign-in-btn a {
+  display: inline-block;
+  padding: 12px 24px;
+  box-sizing: border-box;
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* * Hero section */
+.hero-section {
+  width: 100%;
+  height: 476px;
+  background: var(--extra-light-green-color);
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 24px;
+}
+.hero-section .content .subheading {
+  color: var(--primary-text-color);
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 24px;
+  opacity: 0.5;
+}
+.hero-section .content .heading {
+  color: var(--primary-text-color);
+  font-size: 4.7rem;
+  font-weight: 700;
+  line-height: 56px;
+  margin: 1.36rem 0 2rem 0;
+}
+
+.hero-section .hero-image img {
+  max-width: 402px;
+}
+
+/* Pillar section */
+.pillar-section .title {
+  margin-bottom: 27px;
+}
+.pillar-section .pillar-boxes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.pillar-section .pillar-boxes .pillar-box {
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  border-radius: 16px;
+  background: var(--white-color);
+  padding: 20px;
+}
+.pillar-section .pillar-boxes .pillar-box img {
+  width: 41px;
+  margin-bottom: 22px;
+}
+.pillar-section .pillar-boxes .pillar-box .content .box-title {
+  color: var(--primary-text-color);
+  opacity: 0.8;
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.pillar-section .pillar-boxes .pillar-box .content .box-detail {
+  color: var(--primary-text-color);
+  opacity: 0.7;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+
+/* vision feature section */
+
+.vision-feature .title {
+  margin-bottom: 20px;
+}
+.vision-feature .feature-detail {
+  color: var(--primary-text-color);
+  opacity: 0.7;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+
+.vision-feature .feature-boxes {
+  margin: 27px 0;
+  display: flex;
+  /* align-items: s; */
+  justify-content: space-between;
+  gap: 20px;
+}
+.vision-feature .feature-boxes .feature-box {
+  padding: 27px;
+  border-radius: 16px;
+  flex-basis: 33%;
+}
+
+.vision-feature .feature-boxes .feature-box img {
+  width: 41px;
+  margin-bottom: 22px;
+}
+.vision-feature .feature-boxes .feature-box .content .box-title {
+  color: var(--primary-text-color);
+  opacity: 0.8;
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.vision-feature .feature-boxes .feature-box .content .box-detail {
+  color: var(--primary-text-color);
+  opacity: 0.7;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+
+.vision-feature .feature-boxes .box-1 {
+  background: rgba(84, 144, 245, 0.2);
+}
+.vision-feature .feature-boxes .box-2 {
+  background: var(--extra-light-green-color);
+}
+.vision-feature .feature-boxes .box-3 {
+  background: #f7ebcf;
+}
+
+.feature-btn {
+  display: inline-block;
+  padding: 10px 17px;
+  border-radius: 8px;
+  color: var(--white-color);
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.box-one-btn {
+  background: var(--light-blue-color);
+}
+.box-two-btn {
+  background: var(--light-green-color);
+  transform: translateY(18px);
+}
+.box-three-btn {
+  background: var(--yellow-color);
+}
+
+.vision-feature .great-men-bio {
+  padding: 40px 20px;
+  box-sizing: border-box;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  border-radius: 16px;
+  background: var(--white-color);
+  background: url("../assets/quote-bg.png");
+  background-repeat: no-repeat;
+  background-position: 20px 25px;
+  background-size: 40px;
+}
+.vision-feature .great-men-bio .details {
+  color: var(--primary-text-color);
+  opacity: 0.8;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.vision-feature .great-men-bio .name {
+  color: var(--primary-text-color);
+  opacity: 0.8;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: left;
+}
+.vision-feature .great-men-bio .position {
+  color: var(--primary-text-color);
+  opacity: 0.6;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: left;
+}

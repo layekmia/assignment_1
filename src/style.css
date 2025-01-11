@@ -42,8 +42,15 @@ body {
   font-weight: 600;
   line-height: 18px;
   border-radius: 8px;
+  border: 1px solid transparent;
+  transition: 0.2s linear;
 }
 
+.primary-btn:hover {
+  background: transparent;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
 h2.title {
   color: var(--primary-text-color);
   font-size: 3.4rem;
@@ -72,6 +79,11 @@ nav .sign-in-btn a {
   color: var(--primary-color);
   font-size: 1.5rem;
   font-weight: 600;
+  transition: 200ms ease;
+}
+nav .sign-in-btn a:hover {
+  color: var(--white-color);
+  background: var(--primary-color);
 }
 
 /* * Hero section */
@@ -144,10 +156,10 @@ nav .sign-in-btn a {
 
 /* vision feature section */
 
-.vision-feature .title {
+.vision-future .title {
   margin-bottom: 20px;
 }
-.vision-feature .feature-detail {
+.vision-future .future-detail {
   color: var(--primary-text-color);
   opacity: 0.7;
   font-size: 1.4rem;
@@ -156,24 +168,24 @@ nav .sign-in-btn a {
   letter-spacing: 0%;
 }
 
-.vision-feature .feature-boxes {
+.vision-future .future-boxes {
   margin: 27px 0;
   display: flex;
   /* align-items: s; */
   justify-content: space-between;
   gap: 20px;
 }
-.vision-feature .feature-boxes .feature-box {
+.vision-future .future-boxes .future-box {
   padding: 27px;
   border-radius: 16px;
   flex-basis: 33%;
 }
 
-.vision-feature .feature-boxes .feature-box img {
+.vision-future .future-boxes .future-box img {
   width: 41px;
   margin-bottom: 22px;
 }
-.vision-feature .feature-boxes .feature-box .content .box-title {
+.vision-future .future-boxes .future-box .content .box-title {
   color: var(--primary-text-color);
   opacity: 0.8;
   font-size: 1.7rem;
@@ -182,7 +194,7 @@ nav .sign-in-btn a {
   text-align: left;
   margin-bottom: 10px;
 }
-.vision-feature .feature-boxes .feature-box .content .box-detail {
+.vision-future .future-boxes .future-box .content .box-detail {
   color: var(--primary-text-color);
   opacity: 0.7;
   font-size: 1.4rem;
@@ -191,17 +203,17 @@ nav .sign-in-btn a {
   text-align: left;
 }
 
-.vision-feature .feature-boxes .box-1 {
+.vision-future .future-boxes .box-1 {
   background: rgba(84, 144, 245, 0.2);
 }
-.vision-feature .feature-boxes .box-2 {
+.vision-future .future-boxes .box-2 {
   background: var(--extra-light-green-color);
 }
-.vision-feature .feature-boxes .box-3 {
+.vision-future .future-boxes .box-3 {
   background: #f7ebcf;
 }
 
-.feature-btn {
+.future-btn {
   display: inline-block;
   padding: 10px 17px;
   border-radius: 8px;
@@ -209,6 +221,8 @@ nav .sign-in-btn a {
   font-size: 1.4rem;
   font-weight: 600;
   margin-top: 20px;
+  border: 0.5px solid transparent;
+  transition: 0.2s ease;
 }
 .box-one-btn {
   background: var(--light-blue-color);
@@ -220,8 +234,23 @@ nav .sign-in-btn a {
 .box-three-btn {
   background: var(--yellow-color);
 }
+.box-one-btn:hover {
+  background: transparent;
+  border-color: var(--light-blue-color);
+  color: var(--primary-text-color);
+}
+.box-two-btn:hover {
+  background: transparent;
+  border-color: var(--light-green-color);
+  color: var(--primary-text-color);
+}
+.box-three-btn:hover {
+  background: transparent;
+  border-color: var(--yellow-color);
+  color: var(--primary-text-color);
+}
 
-.vision-feature .great-men-bio {
+.vision-future .great-men-bio {
   padding: 40px 20px;
   box-sizing: border-box;
   border: 1px solid rgba(14, 14, 14, 0.15);
@@ -232,7 +261,7 @@ nav .sign-in-btn a {
   background-position: 20px 25px;
   background-size: 40px;
 }
-.vision-feature .great-men-bio .details {
+.vision-future .great-men-bio .details {
   color: var(--primary-text-color);
   opacity: 0.8;
   font-size: 1.4rem;
@@ -241,17 +270,70 @@ nav .sign-in-btn a {
   text-align: left;
   margin-bottom: 10px;
 }
-.vision-feature .great-men-bio .name {
+.vision-future .great-men-bio .name {
   color: var(--primary-text-color);
   opacity: 0.8;
   font-size: 1.7rem;
   font-weight: 600;
   text-align: left;
 }
-.vision-feature .great-men-bio .position {
+.vision-future .great-men-bio .position {
   color: var(--primary-text-color);
   opacity: 0.6;
   font-size: 1.4rem;
   font-weight: 400;
   text-align: left;
+}
+
+/* Opinoion section */
+.opinion-section .title {
+  margin-bottom: 20px;
+}
+.opinion-section .opinion {
+  padding: 27px;
+  background-color: var(--white-color);
+  border-radius: 16px;
+}
+
+.opinion-section table.opinon-table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+.opinion-section .opinon-table,
+th,
+td {
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+}
+
+.opinon-table thead th {
+  background: var(--extra-light-green-color);
+  color: var(--primary-text-color);
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: left;
+}
+.opinon-table thead th:last-child {
+  text-align: right;
+}
+
+.opinion-section tbody td {
+  color: var(--primary-text-color);
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.opinion tbody td.ans {
+  text-align: center;
+}
+.opinion-section tbody td.ans .ans-btn {
+  text-align: center;
+  padding: 8px 12px;
+  background: var(--extra-light-green-color);
+  box-sizing: border-box;
+  border: 1px solid var(--primary-text-color);
+  border-radius: 4px;
 }
